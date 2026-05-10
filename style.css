@@ -1,0 +1,41 @@
+body{font-family:Arial;direction:rtl;background:#f4f6f9;margin:0}
+nav{background:#2c3e50;padding:10px;text-align:center}
+nav a{color:#fff;margin:10px;text-decoration:none}
+.hero{text-align:center;padding:40px;background:#3498db;color:#fff}
+.card{background:#fff;margin:20px;padding:20px;border-radius:10px;box-shadow:0 0 10px #ccc}
+table{width:100%;border-collapse:collapse}
+th{background:#34495e;color:#fff}
+th,td{padding:10px;border:1px solid #ddd;text-align:center}
+.details{display:none;background:#ecf0f1}
+button{padding:8px 12px;background:#27ae60;color:#fff;border:none;border-radius:5px}
+button:hover{background:#219150}
+
+input {
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 6px 0;
+  width: 100%;
+  font-size: 14px;
+  color: #2c3e50;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #27ae60;
+  outline: none;
+  background-color: #fff;
+}
+
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  color: #2c3e50;
+}
+
+p, td, th, label {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #444;
+}

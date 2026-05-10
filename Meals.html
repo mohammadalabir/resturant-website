@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Meals</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="myFunctions.js"></script>
+</head>
+<body>
+
+<nav>
+<a href="index.html">الرئيسية</a>
+<a href="AboutUs.html">من نحن</a>
+<a href="Meals.html">الوجبات</a>
+</nav>
+
+<h1>قائمة الوجبات</h1>
+<table>
+<tr>
+<th>الرمز</th><th>الوجبة</th><th>السعر</th><th>تفاصيل</th><th>اختيار</th>
+</tr>
+
+<!-- Meal 1 -->
+<tr>
+<td>NM1</td>
+<td><img src="images/fish.jpg" width="80"><br>سمك</td>
+<td>110000</td>
+<td><button class="toggle" data-id="1">عرض</button></td>
+<td><input type="checkbox" class="meal" data-price="110000" data-name="سمك"></td>
+</tr>
+<tr id="details1" class="details"><td colspan="5">وجبة بحرية لذيذة
+    وجبة السمك تتميز بمذاق شهي وقوام طري من الداخل ومقرمش من الخارج.
+تُحضّر من سمك طازج متبل بتوابل لذيذة تعطيه نكهة مميزة وغنية.
+تُقدَّم مع مكونات جانبية تضيف توازنًا رائعًا للطعم وتجعله أكثر إشباعًا.
+تُعد هذه الوجبة خيارًا مثاليًا لمحبي الأطعمة البحرية الخفيفة والصحية.
+كما أنها غنية بالبروتين وتمنح الجسم طاقة مفيدة خلال اليوم.
+ويمكن تقديمها مع الأرز أو البطاطا أو السلطة حسب الرغبة.
+</td></tr>
+
+<!-- Meal 2 -->
+<tr>
+<td>NM2</td>
+<td><img src="images/chicken.jpg" width="80"><br>دجاج</td>
+<td>90000</td>
+<td><button class="toggle" data-id="2">عرض</button></td>
+<td><input type="checkbox" class="meal" data-price="90000" data-name="دجاج"></td>
+</tr>
+<tr id="details2" class="details"><td colspan="5">وجبة الدجاج تتميز بطعم شهي ومحبب لدى الجميع.
+تُحضّر من دجاج طازج ومتبّل جيدًا بالبهارات اللذيذة.
+تُطهى بعناية حتى تصبح طرية من الداخل ومقرمشة أو ذهبية من الخارج.
+تُقدَّم مع أطباق جانبية متنوعة مثل الأرز أو البطاطا أو السلطة.
+تُعد خيارًا مثاليًا لمن يبحث عن وجبة مشبعة ولذيذة في الوقت نفسه.
+كما أنها مناسبة للغداء أو العشاء وتناسب مختلف الأذواق.</td></tr>
+
+<!-- Meal 3 -->
+<tr>
+<td>NM3</td>
+<td><img src="images/meat.jpg" width="80"><br>لحم</td>
+<td>120000</td>
+<td><button class="toggle" data-id="3">عرض</button></td>
+<td><input type="checkbox" class="meal" data-price="120000" data-name="لحم"></td>
+</tr>
+<tr id="details3" class="details"><td colspan="5">وجبة اللحم من الوجبات الشهية والغنية بالمذاق القوي والمميز.
+تُحضّر من لحم طازج ومختار بعناية ليمنح طعمًا رائعًا وقيمة غذائية عالية.
+يمكن تقديمها مشوية أو مطهية مع البهارات والخضار حسب الرغبة.
+تُعد من الأطباق التي يحبها الكثيرون لأنها مشبعة وتناسب وجبة الغداء أو العشاء.
+كما أنها تمنح الجسم البروتين والطاقة وتُقدم عادةً مع الأرز أو الخبز أو السلطة.
+وتُعتبر من الخيارات المفضلة لمحبي الوجبات التقليدية واللذيذة.</td></tr>
+
+<!-- Meal 4 -->
+<tr>
+<td>NM4</td>
+<td><img src="images/salad.jpg" width="80"><br>سلطات</td>
+<td>75000</td>
+<td><button class="toggle" data-id="4">عرض</button></td>
+<td><input type="checkbox" class="meal" data-price="75000" data-name="سلطة"></td>
+</tr>
+<tr id="details4" class="details"><td colspan="5">السلطات تتميز بأنها وجبات خفيفة ومنعشة ومليئة بالألوان الجميلة.
+تُحضّر من خضروات طازجة ومكونات صحية تضيف نكهة مميزة وقيمة غذائية عالية.
+يمكن تقديمها بعدة أشكال مثل سلطة الخضار أو سلطة الزبادي أو سلطة السيزر.
+تُعد خيارًا مثاليًا لمن يبحث عن وجبة خفيفة أو طبق جانبي مع الوجبات الرئيسية.
+كما أنها تمنح إحساسًا بالانتعاش وتناسب مختلف الأذواق.
+وتُعتبر من الخيارات الصحية التي تضيف توازنًا رائعًا إلى أي وجبة.</td></tr>
+
+<!-- Meal 5 -->
+<tr>
+<td>NM5</td>
+<td><img src="images/soup.jpg" width="80"><br>حساء</td>
+<td>85000</td>
+<td><button class="toggle" data-id="5">عرض</button></td>
+<td><input type="checkbox" class="meal" data-price="85000" data-name="حساء"></td>
+</tr>
+<tr id="details5" class="details"><td colspan="5">الحساء من الأطباق الخفيفة والدافئة التي يحبها الكثيرون.
+يُحضَّر من مكونات متنوعة مثل الخضار أو الدجاج أو اللحم أو العدس.
+يتميز بسهولة الهضم وقيمته الغذائية الجيدة، لذلك يناسب جميع الأعمار.
+كما أنه يساعد على الشعور بالدفء والراحة خاصة في الأجواء الباردة.
+يمكن تقديمه كطبق رئيسي خفيف أو كوجبة جانبية لفتح الشهية.
+ويُعد من الخيارات الصحية والمحببة على مائدة الطعام.</td></tr>
+</table>
+
+<button onclick="showForm()">متابعة</button>
+
+<div id="formSection" class="card" style="display:none">
+<form onsubmit="return validateForm()">
+<input id="name" placeholder="Full Name"><br>
+<input id="account" placeholder="Account"required><br>
+<input id="date" placeholder="yyyy-mm-dd(2024-12-31)">
+<input id="phone" placeholder="Phone"><br>
+<button type="submit">إرسال</button>
+</form>
+</div>
+
+<div id="result" class="card"></div>
+
+<script>
+$(document).ready(function(){
+$(".toggle").click(function(){
+let id=$(this).data("id");
+$("#details"+id).slideToggle();
+});
+});
+</script>
+
+</body>
+</html>
